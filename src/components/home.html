@@ -1,0 +1,14 @@
+<!--第三部，我们要写html，就是angular的html的写法-->
+<div>
+  <img src="../../static/img/logo.jpg">
+  <!--跟以前不太一样的是，我们尽量用$ctrl代替之前的$scope-->
+  <p>{{$ctrl.msg}}</p>
+  <p>Hello EMCAScript6</p>
+
+  <ui-view></ui-view>
+  <div class="class1"></div>
+  <dic class="class2"></dic>
+  <!--直接组件名当html标签用，注意这个和es6没有半毛钱的关系-->
+  <!--value是一个绑定属性-->
+  <p1 value="'What is your name'"></p1>
+</div>

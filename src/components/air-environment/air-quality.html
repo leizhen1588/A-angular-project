@@ -1,0 +1,75 @@
+<div class="air-quality">
+  <uib-tabset active="$ctrl.active">
+    <uib-tab index="0" heading="全市空气质量监测站点AQI小时数据">
+      <all-city-air-quality></all-city-air-quality>
+    </uib-tab>
+    <uib-tab index="1" heading="过去24小时AQI趋势">
+      <div class="char-title">过去24小时AQI趋势</div>
+      <echarts option="$ctrl.option1"></echarts>
+      <div class="radio aqi-radio">
+        <label><input type="radio" ng-model="$ctrl.see" name="pollType2" value="AQI">AQI</label>
+        <label><input type="radio" ng-model="$ctrl.see" name="pollType2" value="PM2.5">PM2.5</label>
+        <label><input type="radio" ng-model="$ctrl.see" name="pollType2" value="PM10">PM10</label>
+        <label><input type="radio" ng-model="$ctrl.see" name="pollType2" value="SO2">SO2</label>
+        <label><input type="radio" ng-model="$ctrl.see" name="pollType2" value="NO2">NO2</label>
+        <label><input type="radio" ng-model="$ctrl.see" name="pollType2" value="CO">CO</label>
+        <label><input type="radio" ng-model="$ctrl.see" name="pollType2" value="O3">O3</label>
+      </div>
+    </uib-tab>
+    <uib-tab index="2" heading="AQI小时对比">
+      <div class="char-title">AQI小时对比</div>
+      <echarts option="$ctrl.option2" style="height: 600px"></echarts>
+    </uib-tab>
+    <uib-tab index="3" heading="全国74个重点城市排名">
+      <city74></city74>
+    </uib-tab>
+    <uib-tab index="4" heading="省会城市排名">
+      <sheng-hui></sheng-hui>
+    </uib-tab>
+    <uib-tab index="5" heading="副省级城市排名">
+      <fu-sheng></fu-sheng>
+    </uib-tab>
+    <uib-tab index="6" heading="四川省21城市排名">
+      <city21></city21>
+    </uib-tab>
+    <uib-tab index="7" heading="成都市23区（市）县排名">
+      <qu-xian></qu-xian>
+    </uib-tab>
+    <uib-tab index="8" heading="年度目标">
+      <year-target></year-target>
+    </uib-tab>
+    <uib-tab index="10" heading="年度对比">
+      <year-compare></year-compare>
+    </uib-tab>
+    <uib-tab index="11" heading="城市对比">
+      <city-compare></city-compare>
+    </uib-tab>
+    <uib-tab index="12" heading="臭氧8小时IAQI滑动平均">
+      <o3-sliding></o3-sliding>
+    </uib-tab>
+    <uib-tab index="13" heading="AQI日对比">
+      <aqi-day-compare></aqi-day-compare>
+    </uib-tab>
+    <uib-tab index="14" heading="首要污染物天数统计">
+      <fisrt-pols></fisrt-pols>
+    </uib-tab>
+    <uib-tab index="15" heading="各级别天数占比">
+      <all-level-day></all-level-day>
+    </uib-tab>
+    <uib-tab index="16" heading="年度污染天数占比">
+      <year-pollute-days></year-pollute-days>
+    </uib-tab>
+    <uib-tab index="17" heading="年度优良天数占比">
+      <year-good-days></year-good-days>
+    </uib-tab>
+    <uib-tab index="18" heading="月度优良天数占比">
+      <month-good-days></month-good-days>
+    </uib-tab>
+    <uib-tab index="19" heading="月度污染天数占比">
+      <month-pollute-days></month-pollute-days>
+    </uib-tab>
+    <uib-tab index="20" heading="AQI同比环比统计">
+      <aqi-link-relative></aqi-link-relative>
+    </uib-tab>
+  </uib-tabset>
+</div>
